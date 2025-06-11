@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kalkulator BMI"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/beratInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Berat (kg)"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:elevation="2dp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/tinggiInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tinggi (cm)"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:elevation="2dp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/hitungButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hitung"
+        android:padding="10dp"
+        android:backgroundTint="#1976D2"
+        android:textColor="#FFFFFF"
+        android:elevation="4dp"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:padding="10dp"
+        android:backgroundTint="#757575"
+        android:textColor="#FFFFFF"
+        android:elevation="4dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/hasilBmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#212121"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/kategoriBmi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="#212121"/>
+
+</LinearLayout>
